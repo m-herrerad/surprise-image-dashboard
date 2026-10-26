@@ -1,6 +1,6 @@
 // ── Configuración — mismos valores que en script.js ──
-const SUPABASE_URL      = "TU_SUPABASE_URL";
-const SUPABASE_ANON_KEY = "TU_SUPABASE_ANON_KEY";
+const SUPABASE_URL        = "https://qkpqxijqlkoxrgtnraai.supabase.co";       
+const SUPABASE_ANON_KEY   = "sb_publishable_BgXuHgceRbmyumEoeS85MQ_cYe9KurO";
 
 let idsVistos = new Set();
 
