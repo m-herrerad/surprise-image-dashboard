@@ -1,6 +1,6 @@
 // ── Configuración — mismos valores que en script.js ──
 const SUPABASE_URL        = "https://qkpqxijqlkoxrgtnraai.supabase.co";       
-const SUPABASE_ANON_KEY   = "sb_publishable_BgXuHgceRbmyumEoeS85MQ_cYe9KurO";
+const SUPABASE_ANON_KEY   = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFrcHF4aWpxbGtveHJndG5yYWFpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI5ODA3OTUsImV4cCI6MjEwODU1Njc5NX0.S_Wc6CqlOu3ECQpAH1KkYKseCXpOOXkbfeZtTh2GHWo";
 
 let idsVistos = new Set();
 
