@@ -1,9 +1,25 @@
-:root { --pink: #e8007a; --purple: #9b30ff; --green: #00e676; }
+@font-face {
+  font-family: 'CYN_ModulatorBook';
+  src: url('./CYN_ModulatorBook.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --pink: #e8007a;
+  --purple: #9b30ff;
+  --green: #00e676;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background: #0e1600;
+  background: #174018;
   color: #fff;
   font-family: "Courier New", monospace;
   min-height: 100vh;
@@ -18,6 +34,7 @@ header {
 }
 
 .titulo {
+  font-family: 'CYN_ModulatorBook', Arial, sans-serif;
   font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 900;
   letter-spacing: 0.12em;
@@ -27,10 +44,27 @@ header {
 }
 
 @keyframes glitch {
-  0%, 90%, 100% { text-shadow: none; }
-  92% { text-shadow: 3px 0 var(--pink), -3px 0 var(--green); transform: skewX(1deg); }
-  94% { text-shadow: -3px 0 var(--pink),  3px 0 var(--green); transform: skewX(-1deg); }
-  96% { text-shadow: 3px 2px var(--purple); transform: skewX(0); }
+
+  0%,
+  90%,
+  100% {
+    text-shadow: none;
+  }
+
+  92% {
+    text-shadow: 3px 0 var(--pink), -3px 0 var(--green);
+    transform: skewX(1deg);
+  }
+
+  94% {
+    text-shadow: -3px 0 var(--pink), 3px 0 var(--green);
+    transform: skewX(-1deg);
+  }
+
+  96% {
+    text-shadow: 3px 2px var(--purple);
+    transform: skewX(0);
+  }
 }
 
 .subtitulo {
@@ -63,7 +97,11 @@ header {
   border-radius: 4px;
   transition: all 0.2s;
 }
-.btn-fullscreen:hover { border-color: var(--pink); color: var(--pink); }
+
+.btn-fullscreen:hover {
+  border-color: var(--pink);
+  color: var(--pink);
+}
 
 /* ── Estado vacío ── */
 #estado-vacio {
@@ -90,8 +128,15 @@ header {
 }
 
 @keyframes aparecer {
-  from { opacity: 0; transform: scale(0.5) rotate(-4deg); }
-  to   { opacity: 1; transform: scale(1)   rotate(0deg); }
+  from {
+    opacity: 0;
+    transform: scale(0.5) rotate(-4deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
 }
 
 .cara img {
@@ -104,7 +149,9 @@ header {
   transition: border-color 0.3s;
 }
 
-.cara:hover img { border-color: var(--pink); }
+.cara:hover img {
+  border-color: var(--pink);
+}
 
 .cara-nombre {
   margin-top: 5px;
@@ -124,4 +171,6 @@ header {
   box-shadow: 0 0 12px rgba(232, 0, 122, 0.4);
 }
 
-.hidden { display: none !important; }
+.hidden {
+  display: none !important;
+}
